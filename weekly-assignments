@@ -1,27 +1,86 @@
 RED = 0
 BLACK = 1
-points = [RED, BLACK]
-[0,0]
-[0,0]
-[0,0]
-[0,0]
-[3,0]
-[0,4]
-[0,0]
-[0,0]
-[2,0]
-[0,5]
-[3,0]
-[0,0]
-[0,0]
-[0,1]
-[5,0]
-[0,2]
-[0,0]
-[0,0]
-[2,0]
-[0,0]
-[0,0]
-[0,0]
-[0,0]
-[0,3]
+
+points_pieces = [2, 0, 0, 0, 0, 5, 0, 3, 0, 0, 0, 5, 5, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, 2]
+points_colour = [BLACK, 0, 0, 0, 0, RED, 0, RED, 0, 0, 0, BLACK, RED, 0, 0, 0, BLACK, 0, BLACK, 0, 0, 0, 0, RED]
+
+print("This is your current board, in pieces: ", points_pieces[0:23])
+print("This is your current board, in colour: ", points_colour[0:23])
+
+print("Roll your dice")
+
+colour = input("Which colour are you? Use 0 for RED and 1 for BLACK: ")
+integer_colour = int(colour)
+
+starting_point = input("Please indicate the point where the checker you wish to move is: ")
+integer_starting_point = int(starting_point)
+
+starting_point_checkers = input("How many checkers are there? " )
+integer_starting_point_checkers =int(starting_point_checkers)
+
+ending_point = input("Please indicate the point where the checker you are moving should stop: ")
+integer_ending_point = int(ending_point)
+
+ending_point_checkers = input("How many checkers were there before your move? " )
+integer_ending_point_checkers =int(ending_point_checkers)
+
+points_pieces[integer_starting_point] = integer_starting_point_checkers - 1
+points_colour[integer_starting_point] = colour
+
+points_pieces[integer_ending_point] = integer_ending_point_checkers + 1
+points_colour[integer_ending_point] = colour
+
+print("Now, points_pieces equals: ", points_pieces[0:23])
+print("Now, points_colour equals: ", points_colour[0:23])
+
+print("Roll your dice")
+
+colour = input("Which colour are you? Use 0 for RED and 1 for BLACK: ")
+integer_colour = int(colour)
+
+starting_point = input("Please indicate the point where the checker you wish to move is: ")
+integer_starting_point = int(starting_point)
+
+starting_point_checkers = input("How many checkers are there? " )
+integer_starting_point_checkers =int(starting_point_checkers)
+
+ending_point = input("Please indicate the point where the checker you are moving should stop: ")
+integer_ending_point = int(ending_point)
+
+ending_point_checkers = input("How many checkers were there before your move? " )
+integer_ending_point_checkers =int(ending_point_checkers)
+
+points_pieces[integer_starting_point] = integer_starting_point_checkers - 1
+points_colour[integer_starting_point] = colour
+
+points_pieces[integer_ending_point] = integer_ending_point_checkers + 1
+points_colour[integer_ending_point] = colour
+
+print("Now, points_pieces equals: ", points_pieces[0:24])
+print("Now, points_colour equals: ", points_colour[0:24])
+
+print("Roll your dice")
+
+colour = input("Which colour are you? Use 0 for RED and 1 for BLACK: ")
+integer_colour = int(colour)
+
+starting_point = input("Please indicate the point where the checker you wish to move is: ")
+integer_starting_point = int(starting_point)
+
+starting_point_checkers = input("How many checkers are there? " )
+integer_starting_point_checkers =int(starting_point_checkers)
+
+ending_point = input("Please indicate the point where the checker you are moving should stop: ")
+integer_ending_point = int(ending_point)
+
+ending_point_checkers = input("How many checkers were there before your move? " )
+integer_ending_point_checkers =int(ending_point_checkers)
+
+points_pieces[integer_starting_point] = integer_starting_point_checkers - 1
+points_colour[integer_starting_point] = colour
+
+points_pieces[integer_ending_point] = integer_ending_point_checkers + 1
+points_colour[integer_ending_point] = colour
+
+print("Now, points_pieces equals: ", points_pieces[0:23])
+print("Now, points_colour equals: ", points_colour[0:23])
